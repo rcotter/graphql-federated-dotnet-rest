@@ -1,0 +1,9 @@
+extend type Query {
+    products: [Product]! @delegate
+    productById(id: ID!): Product @delegate
+}
+
+extend type Company {
+    "All the products for a company"
+    products: [Product]! @delegate(path: "productsByCompanyId(id: $fields:id)")
+}

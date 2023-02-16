@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsService", "ProductsService\ProductsService.csproj", "{1566F86D-A99C-4632-B705-F96869DC46E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompaniesService", "CompaniesService\CompaniesService.csproj", "{5AF39D51-B740-4090-8516-2A0E08C3CD69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphqlGateway", "GraphqlGateway\GraphqlGateway.csproj", "{6C0C461D-9FE9-4A64-9359-12E318F29593}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1566F86D-A99C-4632-B705-F96869DC46E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1566F86D-A99C-4632-B705-F96869DC46E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1566F86D-A99C-4632-B705-F96869DC46E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1566F86D-A99C-4632-B705-F96869DC46E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AF39D51-B740-4090-8516-2A0E08C3CD69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AF39D51-B740-4090-8516-2A0E08C3CD69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AF39D51-B740-4090-8516-2A0E08C3CD69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AF39D51-B740-4090-8516-2A0E08C3CD69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C0C461D-9FE9-4A64-9359-12E318F29593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C0C461D-9FE9-4A64-9359-12E318F29593}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C0C461D-9FE9-4A64-9359-12E318F29593}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C0C461D-9FE9-4A64-9359-12E318F29593}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

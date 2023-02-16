@@ -1,0 +1,4 @@
+extend type Query {
+    companies: [Company]! @delegate
+    companyById(id: ID!): Company @delegate
+}
