@@ -1,7 +1,14 @@
-Use GraphQL Federation to stitch subgraphs, each from their own respective domain service, into
-a single cohesive graph. Each domain service maintains and publishes its own description.
-A gateway service brings them altogether as a single entry point for the clients to 
-interact with.
+Microservices bring a lot of benefits but also new complexity for clients.
+Information that the old monolith served up custom formatted for usage scenarios is now 
+disassociated, requiring multiple network calls and manually stitching them together. 
+Each client must re-acquire the domain stitching knowledge.
+
+GraphQL Federation presents a gateway solution to stitching subgraphs, each maintained and 
+published by their own respective domain service, into a single cohesive graph. 
+
+# Info
+* [How Netflix Scales Its API with GraphQL Federation @ InfoQ 2021](https://www.youtube.com/live/QrEOvHdH2Cg)
+* [GraphQL, gRPC or REST? Resolving the API Developer's Dilemma](https://www.youtube.com/live/l_P6m3JTyp0)
 
 # Running
 ## Companies Service
@@ -57,7 +64,7 @@ interact with.
        ```
 
 ## Stitch Them Together
-Notice that products have references to companies. If our app needs to work with a company's products
+Notice that products have references to companies. If our app needs to work with a company's products,
 two REST or two GraphQL calls are required and then some painful merging of the two responses.
 
 Happily we can use GraphQL Federation and its stitching. As a client we can get what we want without
@@ -104,4 +111,8 @@ maintain its own knowledge of how to stitch domain responses together.
 
 # Implementation
 GraphQL was setup as per [HotChocolate](https://chillicream.com/docs/hotchocolate/v12/get-started-with-graphql-in-net-core).
+
+This is not the Production ready implementation. HotChocolate
+demonstrates using a Redis DB as the schema store that domain
+services publish to for consumption by the gateway.
 
