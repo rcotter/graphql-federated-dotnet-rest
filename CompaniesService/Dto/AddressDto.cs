@@ -1,11 +1,4 @@
-namespace CompaniesService;
+namespace CompaniesService.Dto;
 
-[GraphQLName("address")]
-public class AddressDto
-{
-  public string Street { get; set; }
-
-  public string Number { get; set; }
-  
-  public bool IsHeadquarters { get; set; }
-}
+[GraphQLName("Address")]
+public record AddressDto(string Street, string Number, bool IsHeadquarters);

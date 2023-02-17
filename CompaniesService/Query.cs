@@ -1,3 +1,5 @@
+using CompaniesService.Dto;
+
 namespace CompaniesService;
 
 public class Query

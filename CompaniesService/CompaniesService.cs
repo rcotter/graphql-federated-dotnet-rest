@@ -1,3 +1,5 @@
+using CompaniesService.Dto;
+
 namespace CompaniesService;
 
 // Core retrieval logic re-usable by REST and GraphQL

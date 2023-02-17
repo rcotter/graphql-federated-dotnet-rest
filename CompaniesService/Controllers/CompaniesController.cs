@@ -1,3 +1,4 @@
+using CompaniesService.Dto;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CompaniesService.Controllers

@@ -1,4 +1,4 @@
-namespace CompaniesService;
+namespace CompaniesService.Dto;
 
 [GraphQLName("Company")]
 [GraphQLDescription("A company that produces products")]
