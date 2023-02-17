@@ -1,5 +1,5 @@
 # graphql-federated-dotnet-rest
-GraphQL Federation example using .Net HotChocolate and peer RESTful services
+GraphQL Federation example using [.Net HotChocolate](https://chillicream.com/docs/hotchocolate/v13/distributed-schema/schema-federations) and peer RESTful services
 
 Microservices bring a lot of benefits but also new complexity for clients.
 Information that the old monolith served up custom formatted for usage scenarios is now 
